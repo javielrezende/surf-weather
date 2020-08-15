@@ -19,3 +19,10 @@ Colocado dois comandos de lint no scritp, pois o que nao contem fix, é utilizad
 Sem o ts-node quando startamos o servidor o node compila o codigo para js e roda em cima desses arquivos compilados, 
 dentro da pasta dist. Com o ts-node o node roda em cima dos arquivos ts. Muito mais rapido para subir o servidor
 para desenvolvimento. E neste pacote especifico para dev o watch ja eh integrado.
+
+* C02P04
+- yarn add -D jest ts-jest @types/jest
+- yarn add -D supertest @types/supertest
+RunInBand colocado dentro do script de rodar o teste serve para rodar o teste em ordem, sem isso o jest roda o teste em paralelo.
+Bom para ser configurado assim para testes que manipulam o banco de dados, podendo um teste inflluenciar no outro. Testes de unidade
+isso não é necessario.
