@@ -37,3 +37,11 @@ visto como um arquivo local, e nao global, por isso os imports inline.
 
 * C01P06
 - yarn add -D prettier
+
+* C02P01-1
+- yarn add axios
+- yarn add -D @types/axios
+Neste exemplo dentro do arquivo stormGlass:
+constructor(protected request: AxiosStatic) {}
+Com este protected dentro do constructor nao ha a necessidade de escrever a propriedade request fora do construtor para usá-lo com o this.
+Desta forma pode-se usar apenas com o protected dentro do contrutor.
