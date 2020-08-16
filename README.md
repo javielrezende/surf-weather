@@ -45,3 +45,10 @@ Neste exemplo dentro do arquivo stormGlass:
 constructor(protected request: AxiosStatic) {}
 Com este protected dentro do constructor nao ha a necessidade de escrever a propriedade request fora do construtor para usá-lo com o this.
 Desta forma pode-se usar apenas com o protected dentro do contrutor.
+
+* C02P01-2
+- private isValidPoint(point: Partial<StormGlassPoint>): boolean 
+Interessante neste étodo de dentro de stormGlass eh que possui !! que fazz com que o retorno force ser um boolean.
+
+* C02P01-3
+Esta linha: const mockedAxios = axios as jest.Mocked<typeof axios> no teste do stormGlass foi colocada para tipar o jest com o axios.
