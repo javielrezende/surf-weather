@@ -4,7 +4,7 @@
 - Criado o projeto com npm init
 - yarn add -D typescript
 - yarn add -D @types/node 
-- yarn add module-alias
+- yarn add module-alias 
 - yarn add -D @types/module-alias
 Para funcionar os paths que estão configurados no tsconfig, foi necessario instalar a dependencia module-alias e configurá-lo
 no arquivo de config module-alias dentro de util.
@@ -34,3 +34,6 @@ No teste e no setup do jest inserimos um elemento global para o ts. ->global.tes
 sobrescrevemos algumas coisas que ficaram no arquivo globals.d.ts, dentro da pasta teste. Os imports precisam ser inline para o arquivo ser
 tratado como global. Se os imports ficarem como nos demais arquivos, ou seja, nas primeiras linhas do arquivo, o arquivo globals será
 visto como um arquivo local, e nao global, por isso os imports inline.
+
+* C01P06
+- yarn add -D prettier
